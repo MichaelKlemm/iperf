@@ -10982,7 +10982,7 @@ linux*android*)
 
   dynamic_linker='Android linker'
   # Don't embed -rpath directories since the linker doesn't support them.
-  hardcode_libdir_flag_spec='-L$libdir'
+  hardcode_libdir_flag_spec='-L$libdir -fPIC -pie'
   ;;
 
 # This must be glibc/ELF.
