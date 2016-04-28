@@ -37,7 +37,11 @@
 #include <assert.h>
 #include <netdb.h>
 #include <string.h>
+#ifdef __ANDROID__
+#include <fcntl.h>
+#else
 #include <sys/fcntl.h>
+#endif
 
 #ifdef HAVE_SENDFILE
 #ifdef linux
